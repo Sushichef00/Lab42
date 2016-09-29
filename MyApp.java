@@ -1,4 +1,5 @@
-// Author: Ville M
+// Author: Ville M, Teemu K, Janne T
+
 public class main {
 
      public static void main(String[] args) {
@@ -6,6 +7,8 @@ public class main {
         System.out.println("Product value is " + product.countValue());
         product.printProduct();
         product.changePrice();
+        product.changeBalance(50);
+
      }
 }
 
@@ -21,7 +24,7 @@ class Product {
     }
 
     public double countValue() {
-            return(amount * price);
+    	return(amount * price);
     }
 
     public void printProduct() {
@@ -30,6 +33,8 @@ class Product {
       }
 
     public void changePrice() {
+    }
 
+    public void changeBalance(int newValue) {
     }
 }
